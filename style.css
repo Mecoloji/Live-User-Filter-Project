@@ -1,0 +1,144 @@
+/* ! ===== Google Fonts Start ===== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* ! ===== Google Fonts End ===== */
+
+/* ! ===== Reset Start ===== */
+* {
+  box-sizing: border-box;
+}
+/* ! ===== Reset End ===== */
+
+/* ! ===== Body Style Start ===== */
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    rgba(85, 88, 218, 1) 0%,
+    rgba(95, 209, 249, 1) 100.2%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+/* ! ===== Body Style End ===== */
+
+/* ! ===== Container Style Start ===== */
+.container {
+  border-radius: 9px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 320px;
+}
+/* ! ===== Container Style End ===== */
+
+/* ! ===== Header Style Start ===== */
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+}
+
+.header {
+  background-color: #2c7da0;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.header input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(238, 238, 238, 0.5);
+}
+/* ! ===== Header Style End ===== */
+
+/* ! ===== User List Style Start ===== */
+.user-list {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-left: 10px;
+}
+
+.user-list li {
+  display: flex;
+  padding: 20px;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 55px;
+  width: 55px;
+  border: 1px solid rgba(34, 34, 34, 0.5);
+}
+
+.user-list .user-info {
+  margin-left: 10px;
+}
+.user-list .user-info h4 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.user-list .user-info p {
+  font-size: 12px;
+}
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+}
+.user-list li.hide {
+  display: none;
+}
+/* ! ===== User List Style End ===== */
+
+/* ! ===== Loading Style Start ===== */
+/* https://www.w3schools.com/howto/howto_css_loader.asp */
+.loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #3498db;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ! ===== Loading Style End ===== */
